@@ -1,0 +1,70 @@
+/* Grid Container - Default (Small Screens) */
+.container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "content";
+  grid-template-columns: 1fr; /* Only main content fills the width */
+  grid-template-rows: auto 1fr; /* Header height adapts, content takes remaining height */
+  height: 100vh;
+}
+
+/* Sidebar - Hidden by Default as the small devics are the default one */
+.sidebar {
+  display: none;
+}
+
+/* Show Sidebar on Large Screens */
+@media (min-width: 768px) {
+  .container {
+    grid-template-areas:
+      "sidebar header"
+      "sidebar content";
+    grid-template-columns: var(--menu-width) 1fr;
+  }
+
+  .sidebar {
+    background-color: var(--color-primary-200);
+    color: var(--color-primary-50);
+    display: flex;
+    grid-area: sidebar;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('/assets/images/pattern.svg'); /* Add your SVG file path here */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: left 80%; /* Centers the SVG in the sidebar */
+    background-size: 100px auto;
+
+    .logo {
+      font-size: 3rem;
+      font-weight: 700;
+      margin: 3rem;
+      color: var(--color-secondary-100);
+    }
+  }
+  .mobile-menu {
+    display: none;
+  }
+}
+
+/* Header */
+.header {
+  grid-area: header;
+  background-color: var(--color-secondary-100);
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+}
+
+/* Content Area */
+.content {
+  grid-area: content;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-secondary-100);
+}

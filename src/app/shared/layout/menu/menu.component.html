@@ -1,0 +1,10 @@
+<nav class="menu-list" aria-label="Main navigation menu">
+    <ng-container *ngFor="let link of menu; let i = index">
+        <a role="button" tabindex="0" [ngClass]="{'active': link.active}" (keydown)="onKeydown($event, i)"
+            (click)="menuChange($event, i)" [routerLink]="link.path"
+            [attr.aria-label]="'Navigate to ' + link.name" [attr.aria-current]="link.active ? 'page' : null">
+            <img [src]="'assets/images/' + link.icon + '.svg'" [alt]="link.name + ' icon'">
+            <span (click)="handleSpanClick($event, $event.target)">{{ link.name }}</span>
+        </a>
+    </ng-container>
+</nav>

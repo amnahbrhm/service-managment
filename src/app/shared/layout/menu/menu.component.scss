@@ -1,0 +1,34 @@
+.menu-list {
+  margin: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    width: var(--menu-width);
+    padding: 1.2rem;
+    box-sizing: border-box;
+    cursor: pointer;
+    color: inherit;
+    text-decoration: none;
+    outline: none; /* Remove the default focus outline */
+    box-shadow: none;
+    img {
+      width: 18px;
+    }
+  }
+  .active {
+    background-color: var(--color-secondary-40);
+    color: var(--color-secondary-100);
+    font-weight: 400;
+    img {
+      filter: brightness(2);
+      width: 20px;
+    }
+  }
+  a:focus {
+    outline: 2px solid var(--color-border); 
+  }
+}

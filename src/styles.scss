@@ -1,1 +1,73 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --color-primary-200: #4d6ba5;
+  --color-primary-100: #007bff;
+  --color-primary-50 : #D2DCE0;
+  --color-secondary-600: #333333;
+  --color-secondary-200: #888888;
+  --color-secondary-100: #ffff;
+  --color-secondary-40: rgba(255, 255, 255, 0.04);
+  --color-success-100: #d4f3d5;
+  --color-success-300: #2a8a42;
+  --color-warning-100: #fbead4;
+  --color-warning-300: #c97a14;
+  --color-border: #E2E7F1;
+
+
+  --menu-width: 250px
+}
+
+@font-face {
+  font-family: 'IBMPlexSans';
+  src: url('/assets/fonts/IBMPlexSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBMPlexSans';
+  src: url('/assets/fonts/IBMPlexSans-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBMPlexSans';
+  src: url('/assets/fonts/IBMPlexSans-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBMPlexSans';
+  src: url('/assets/fonts/IBMPlexSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBMPlexSans';
+  src: url('/assets/fonts/IBMPlexSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBMPlexSans';
+  src: url('/assets/fonts/IBMPlexSans-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBMPlexSans';
+  src: url('/assets/fonts/IBMPlexSans-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'IBMPlexSans', sans-serif;
+  font-weight: normal;
+}

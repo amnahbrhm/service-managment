@@ -1,0 +1,25 @@
+<div class="container">
+    <aside class="sidebar">
+        <div class="logo" aria-label="Logo">Logo</div>
+        <ng-content select="app-menu"></ng-content>
+    </aside>
+
+    <!-- TODO add mobile menu and logo -->
+    <!-- I may move the logo to the header and change it's postion depends on the viewport -->
+    <!-- <nav class="mobile-menu">
+        <p-dropdown 
+            [options]="cities" 
+            [(ngModel)]="selectedCity" 
+            optionLabel="name" 
+            placeholder="Select a City" />
+    </nav> -->
+
+    <header class="header">
+        <ng-content select="app-breadcrumb"></ng-content>
+        <ng-content select="app-user-profile"></ng-content>
+    </header>
+
+    <section class="content">
+        <ng-content select="router-outlet"></ng-content>
+    </section>
+</div>
