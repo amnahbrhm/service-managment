@@ -1,24 +1,39 @@
-<p-table [value]="products" [tableStyle]="{ 'min-width': '50rem' }">
+<router-outlet></router-outlet>
+<p-table [value]="services" [tableStyle]="{ 'min-width': '50rem' }">
     <ng-template pTemplate="header">
         <tr>
+            <th>Service Name</th>
             <th>Code</th>
-            <th>Name</th>
-            <th>Category</th>
-            <th>Quantity</th>
+            <th>Type</th>
+            <th>Status</th>
+            <th></th>
+            <th></th>
         </tr>
     </ng-template>
-    <ng-template pTemplate="body" let-product>
+    <ng-template pTemplate="body" let-service>
         <tr>
-            <td>{{ product.code }}</td>
-            <td>{{ product.name }}</td>
-            <td>{{ product.category }}</td>
-            <td>{{ product.quantity }}</td>
+            <td>{{ service.serviceName }}</td>
+            <td>{{ service.code }}</td>
+            <td>{{ service.type }}</td>
+            <td>
+                <span class="tag"
+                    [ngClass]="{'tag--active': service.status== 'active', 'tag--inactive': service.status== 'inactive'}">{{
+                    service.status }}</span>
+            </td>
+            <td>
+                <a class="flex align-items-center gap-1 text-blue cursor-pointer" [routerLink]="['edit', service.id]">
+                    Edit
+                    <div id="edit-svg"></div>
+                </a>
+            </td>
+            <td>
+                <a class="flex align-items-center gap-1 text-blue cursor-pointer" [routerLink]="['view', service.id]">
+                    View
+                    <div id="view-svg"></div>
+                </a>
+            </td>
         </tr>
     </ng-template>
 </p-table>
 
-<p-paginator 
-    (onPageChange)="onPageChange($event)" 
-    [first]="first"
-    [rows]="rows" 
-    [totalRecords]="120"  />
+<!-- <p-paginator (onPageChange)="onPageChange($event)" [first]="first" [rows]="rows" [totalRecords]="120" /> -->

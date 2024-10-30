@@ -34,7 +34,9 @@
             ],
             "styles": [
               "src/styles.scss",
-              "node_modules/primeng/resources/primeng.min.css"
+              "node_modules/primeng/resources/primeng.min.css",
+              "node_modules/primeflex/primeflex.css",
+              "public/theme.scss"
             ],
             "scripts": [],
             "server": "src/main.server.ts",

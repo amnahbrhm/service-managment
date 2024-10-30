@@ -1,0 +1,72 @@
+[
+    {
+        "id": "e5b9f90e-4f6a-4c77-9057-1e8c92925ff8",
+        "serviceName": "Property Transfer",
+        "code": "P-T01",
+        "type": "Real Estate",
+        "status": "active"
+    },
+    {
+        "id": "a37f5a65-1d5d-420d-9128-54675930cb71",
+        "serviceName": "Vehicle Registration",
+        "code": "V-R01",
+        "type": "Transportation",
+        "status": "active"
+    },
+    {
+        "id": "adf3e2b1-d6c9-4b17-b3b9-e5c4a5f04f1d",
+        "serviceName": "Business Licensing",
+        "code": "B-L02",
+        "type": "Business",
+        "status": "inactive"
+    },
+    {
+        "id": "b61474ed-7c1e-482d-a595-1d049e1d9458",
+        "serviceName": "Tax Consultation",
+        "code": "T-C03",
+        "type": "Finance",
+        "status": "active"
+    },
+    {
+        "id": "e5c9820c-0a4e-4815-9e0f-d7c0c01d3b6c",
+        "serviceName": "Health Insurance",
+        "code": "H-I04",
+        "type": "Insurance",
+        "status": "inactive"
+    },
+    {
+        "id": "d2cdd24e-b617-4e1d-8b92-69bf0a7ac3ed",
+        "serviceName": "Property Valuation",
+        "code": "P-V05",
+        "type": "Real Estate",
+        "status": "active"
+    },
+    {
+        "id": "c3735c43-843b-48d1-a8ec-4a3178bdfc18",
+        "serviceName": "Construction Permits",
+        "code": "C-P06",
+        "type": "Construction",
+        "status": "active"
+    },
+    {
+        "id": "ef3bc62f-3ad2-4d77-b50d-7a3d62131276",
+        "serviceName": "Environmental Assessment",
+        "code": "E-A07",
+        "type": "Environmental",
+        "status": "inactive"
+    },
+    {
+        "id": "95f41a25-3bb3-42df-b3d4-6121f57b5e5e",
+        "serviceName": "Event Planning",
+        "code": "E-P08",
+        "type": "Services",
+        "status": "active"
+    },
+    {
+        "id": "b8314c21-2d7f-4b7b-a7d7-3c99fd4f3018",
+        "serviceName": "IT Support",
+        "code": "I-S09",
+        "type": "Technology",
+        "status": "active"
+    }
+]

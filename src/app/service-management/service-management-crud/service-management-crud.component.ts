@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-service-management-crud',
@@ -7,6 +7,12 @@ import { Component } from '@angular/core';
   templateUrl: './service-management-crud.component.html',
   styleUrl: './service-management-crud.component.scss'
 })
-export class ServiceManagementCrudComponent {
+export class ServiceManagementCrudComponent implements OnInit {
+  constructor() {
+    console.log('ServiceManagementCrudComponent');
+    
+  }
+
+  ngOnInit() {}
 
 }

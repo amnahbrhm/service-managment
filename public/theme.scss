@@ -1,0 +1,21 @@
+@layer reset {
+    .p-datatable {
+        border-collapse: collapse;
+    }
+
+    .p-datatable tbody td,
+    th {
+        padding: 1rem;
+    }
+
+    .p-datatable tbody tr td {
+        border-bottom: 1px solid var(--color-primary-10);
+    }
+
+    .p-datatable thead th {
+        text-align: left;
+        border-bottom: 2px solid var(--color-primary-50);
+        color: var(--color-primary-300);
+        font-weight: 500;
+    }
+}

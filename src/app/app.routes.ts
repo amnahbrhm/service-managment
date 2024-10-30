@@ -13,40 +13,38 @@ export const routes: Routes = [
                 './service-management/service-management-list/service-management-list.component'
             ).then((m) => m.ServiceManagementListComponent);
         },
-        children: [
-            {
-                path: 'new',
-                data: {
-                    type: 'new',
-                },
-                async loadComponent() {
-                    return import(
-                        './service-management/service-management-crud/service-management-crud.component'
-                    ).then((m) => m.ServiceManagementCrudComponent);
-                },
-            },
-            {
-                path: 'view/:id',
-                data: {
-                    type: 'view',
-                },
-                async loadComponent() {
-                    return import(
-                        './service-management/service-management-crud/service-management-crud.component'
-                    ).then((m) => m.ServiceManagementCrudComponent);
-                },
-            },
-            {
-                path: 'edit/:id',
-                data: {
-                    type: 'edit',
-                },
-                async loadComponent() {
-                    return import(
-                        './service-management/service-management-crud/service-management-crud.component'
-                    ).then((m) => m.ServiceManagementCrudComponent);
-                }
-            },
-        ],
+    },
+    {
+        path: 'service-management/new',
+        data: {
+            type: 'new',
+        },
+        async loadComponent() {
+            return import(
+                './service-management/service-management-crud/service-management-crud.component'
+            ).then((m) => m.ServiceManagementCrudComponent);
+        },
+    },
+    {
+        path: 'service-management/view/:id',
+        data: {
+            type: 'view',
+        },
+        async loadComponent() {
+            return import(
+                './service-management/service-management-crud/service-management-crud.component'
+            ).then((m) => m.ServiceManagementCrudComponent);
+        },
+    },
+    {
+        path: 'service-management/edit/:id',
+        data: {
+            type: 'edit',
+        },
+        async loadComponent() {
+            return import(
+                './service-management/service-management-crud/service-management-crud.component'
+            ).then((m) => m.ServiceManagementCrudComponent);
+        },
     },
 ];

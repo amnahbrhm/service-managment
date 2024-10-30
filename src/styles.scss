@@ -1,73 +1,125 @@
 :root {
+  --color-primary-300: #70819d;
   --color-primary-200: #4d6ba5;
   --color-primary-100: #007bff;
-  --color-primary-50 : #D2DCE0;
+  --color-primary-50: #d2dce0;
+  --color-primary-10: #e4ebee;
+
   --color-secondary-600: #333333;
   --color-secondary-200: #888888;
   --color-secondary-100: #ffff;
   --color-secondary-40: rgba(255, 255, 255, 0.04);
-  --color-success-100: #d4f3d5;
-  --color-success-300: #2a8a42;
-  --color-warning-100: #fbead4;
-  --color-warning-300: #c97a14;
-  --color-border: #E2E7F1;
 
+  --color-success-100: #E7F5EA;
+  --color-success-300: #1EB05B;
 
-  --menu-width: 250px
+  --color-warning-100: #FDF2E5;
+  --color-warning-300: #BF7A1F;
+
+  --color-border: #e2e7f1;
+  --color-text-blue: #52BDCC;
+
+  --menu-width: 250px;
 }
 
 @font-face {
-  font-family: 'IBMPlexSans';
-  src: url('/assets/fonts/IBMPlexSans-Bold.ttf') format('truetype');
+  font-family: "IBMPlexSans";
+  src: url("/assets/fonts/IBMPlexSans-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'IBMPlexSans';
-  src: url('/assets/fonts/IBMPlexSans-ExtraLight.ttf') format('truetype');
+  font-family: "IBMPlexSans";
+  src: url("/assets/fonts/IBMPlexSans-ExtraLight.ttf") format("truetype");
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'IBMPlexSans';
-  src: url('/assets/fonts/IBMPlexSans-Light.ttf') format('truetype');
+  font-family: "IBMPlexSans";
+  src: url("/assets/fonts/IBMPlexSans-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'IBMPlexSans';
-  src: url('/assets/fonts/IBMPlexSans-Medium.ttf') format('truetype');
+  font-family: "IBMPlexSans";
+  src: url("/assets/fonts/IBMPlexSans-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'IBMPlexSans';
-  src: url('/assets/fonts/IBMPlexSans-Regular.ttf') format('truetype');
+  font-family: "IBMPlexSans";
+  src: url("/assets/fonts/IBMPlexSans-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'IBMPlexSans';
-  src: url('/assets/fonts/IBMPlexSans-SemiBold.ttf') format('truetype');
+  font-family: "IBMPlexSans";
+  src: url("/assets/fonts/IBMPlexSans-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'IBMPlexSans';
-  src: url('/assets/fonts/IBMPlexSans-Thin.ttf') format('truetype');
+  font-family: "IBMPlexSans";
+  src: url("/assets/fonts/IBMPlexSans-Thin.ttf") format("truetype");
   font-weight: 100;
   font-style: normal;
 }
 
-
 body {
   margin: 0;
-  font-family: 'IBMPlexSans', sans-serif;
+  font-family: "IBMPlexSans", sans-serif;
   font-weight: normal;
+}
+
+.tag {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 90px;
+  width: max-content;
+  border-radius: 8px;
+  text-transform: capitalize;
+  font-weight: 500;
+
+  &--active {
+    background-color: var(--color-success-100);
+    color: var(--color-success-300);
+  }
+  &--inactive {
+    background-color: var(--color-warning-100);
+    color: var(--color-warning-300);
+  }
+}
+
+
+#edit-svg {
+  background: url('/assets/images/edit.svg') no-repeat center center;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+}
+
+#view-svg {
+  background: url('/assets/images/view.svg') no-repeat center center;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+}
+
+// text colors start
+.text-blue {
+  color: var(--color-text-blue);
+}
+
+// test colors end
+
+a {
+  text-decoration: none;
 }
