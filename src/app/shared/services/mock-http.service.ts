@@ -38,4 +38,12 @@ export class MockHttpService {
       })
     );
   }
+
+  getById(url: string, id: string): Observable<any> {
+    return this.http.get<any>(url).pipe(
+      map((data) => {
+        return data.find((item: any) => item.id === id);
+      })
+    );
+  }
 }

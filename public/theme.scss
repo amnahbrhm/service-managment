@@ -25,7 +25,6 @@
     }
 
     .p-inputtext {
-        border-right: none;
         border-top-left-radius: var(--border-radius);
         border-bottom-left-radius: var(--border-radius);
     }
@@ -37,6 +36,7 @@
     }
 
     .p-dropdown {
+        min-height: 2.5rem;
         border-radius: var(--border-radius);
     }
 
@@ -51,6 +51,10 @@
         font-weight: 500;
     }
 
+    .p-button.p-button-outlined {
+        background: none;
+        color: var(--color-text-blue);
+    }
     .p-button.p-button-link {
         color: var(--color-primary-300);
         background: none;

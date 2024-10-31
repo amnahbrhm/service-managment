@@ -1,0 +1,21 @@
+@layer {
+
+    .p-disabled,
+    .p-component:disabled {
+        border: none;
+        opacity: 1;
+        padding: 0;
+    }
+}
+
+label {
+    color: var(--color-primary-300);
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+input {
+    font-weight: 300;
+
+    font-size: 1rem;
+}

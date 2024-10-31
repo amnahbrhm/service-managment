@@ -43,18 +43,23 @@
                 </td>
                 <td>
                     <a class="flex align-items-center gap-1 text-blue cursor-pointer"
-                        [routerLink]="['edit', service.id]">
+                        [routerLink]="['edit', service.guid]">
                         Edit
                         <div id="edit-svg"></div>
                     </a>
                 </td>
                 <td>
                     <a class="flex align-items-center gap-1 text-blue cursor-pointer"
-                        [routerLink]="['view', service.id]">
+                        [routerLink]="['view', service.guid]">
                         View
                         <div id="view-svg"></div>
                     </a>
                 </td>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="emptymessage">
+            <tr>
+                <td colspan="6">No Records.</td>
             </tr>
         </ng-template>
     </p-table>

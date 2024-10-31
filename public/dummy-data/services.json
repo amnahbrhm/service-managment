@@ -1,282 +1,496 @@
 [
     {
-        "id": "e5b9f90e-4f6a-4c77-9057-1e8c92925ff8",
+        "guid": "e5b9f90e-4f6a-4c77-9057-1e8c92925ff8",
         "serviceName": "Property Transfer",
+        "serviceNameAr": "نقل الملكية",
         "code": "P-T01",
         "type": "Real Estate",
-        "status": "active"
+        "status": "inactive",
+        "price": 1500.0,
+        "descriptionAr": "خدمة لنقل ملكية العقار.",
+        "descriptionEn": "Service for transferring property ownership.",
+        "vattable": true,
+        "vatValue": 15.0
+    },
+    {
+        "guid": "a37f5a65-1d5d-420d-9128-54675930cb71",
+        "serviceName": "Vehicle Registration",
+        "serviceNameAr": "تسجيل المركبات",
+        "code": "V-R01",
+        "type": "Transportation",
+        "status": "active",
+        "price": 500.0,
+        "descriptionAr": "خدمة تسجيل المركبات.",
+        "descriptionEn": "Registration service for vehicles.",
+        "vattable": true,
+        "vatValue": 10.0
+    },
+    {
+        "guid": "c2d9f90e-4f6a-4c77-9057-1e8c92925ff8",
+        "serviceName": "Legal Advisory",
+        "serviceNameAr": "استشارات قانونية",
+        "code": "L-A01",
+        "type": "Services",
+        "status": "inactive",
+        "price": 3500.0,
+        "descriptionAr": "خدمة استشارات قانونية.",
+        "descriptionEn": "Legal advisory service.",
+        "vattable": true,
+        "vatValue": 15.0
+    },
+    {
+        "guid": "d3e9f90e-4f6a-4c77-9057-1e8c92925ff9",
+        "serviceName": "Market Research",
+        "serviceNameAr": "أبحاث السوق",
+        "code": "M-R01",
+        "type": "Business",
+        "status": "active",
+        "price": 4000.0,
+        "descriptionAr": "خدمة أبحاث السوق.",
+        "descriptionEn": "Market research service.",
+        "vattable": true,
+        "vatValue": 15.0
+    },
+    {
+        "guid": "e4b9f90e-4f6a-4c77-9057-1e8c92925ff8",
+        "serviceName": "Cybersecurity",
+        "serviceNameAr": "الأمن السيبراني",
+        "code": "C-S01",
+        "type": "Technology",
+        "status": "inactive",
+        "price": 4500.0,
+        "descriptionAr": "خدمة الأمن السيبراني.",
+        "descriptionEn": "Cybersecurity service.",
+        "vattable": true,
+        "vatValue": 15.0
+    },
+    {
+        "guid": "f5b9f90e-4f6a-4c77-9057-1e8c92925ff8",
+        "serviceName": "Project Management",
+        "serviceNameAr": "إدارة المشاريع",
+        "code": "P-M01",
+        "type": "Business",
+        "status": "active",
+        "price": 5000.0,
+        "descriptionAr": "خدمة إدارة المشاريع.",
+        "descriptionEn": "Project management service.",
+        "vattable": true,
+        "vatValue": 15.0
+    },
+    {
+        "guid": "g6b9f90e-4f6a-4c77-9057-1e8c92925ff8",
+        "serviceName": "Tax Consulting",
+        "serviceNameAr": "استشارات ضريبية",
+        "code": "T-C01",
+        "type": "Finance",
+        "status": "active",
+        "price": 3000.0,
+        "descriptionAr": "خدمة استشارات ضريبية.",
+        "descriptionEn": "Tax consulting service.",
+        "vattable": true,
+        "vatValue": 15.0
+    },
+    {
+        "id": "h7b9f90e-4f6a-4c77-9057-1e8c92925ff8",
+        "serviceName": "Architectural Design",
+        "serviceNameAr": "تصميم معماري",
+        "code": "A-D01",
+        "type": "Construction",
+        "status": "active",
+        "price": 6000.0,
+        "descriptionAr": "خدمة تصميم معماري.",
+        "descriptionEn": "Architectural design service.",
+        "vattable": true,
+        "vatValue": 15.0
+    },
+    {
+        "id": "i8b9f90e-4f6a-4c77-9057-1e8c92925ff8",
+        "serviceName": "Environmental Consulting",
+        "serviceNameAr": "استشارات بيئية",
+        "code": "E-C01",
+        "type": "Environmental",
+        "status": "active",
+        "price": 3500.0,
+        "descriptionAr": "خدمة استشارات بيئية.",
+        "descriptionEn": "Environmental consulting service.",
+        "vattable": true,
+        "vatValue": 15.0
+    },
+    {
+        "id": "j9b9f90e-4f6a-4c77-9057-1e8c92925ff8",
+        "serviceName": "Logistics Management",
+        "serviceNameAr": "إدارة اللوجستيات",
+        "code": "L-M01",
+        "type": "Transportation",
+        "status": "active",
+        "price": 4500.0,
+        "descriptionAr": "خدمة إدارة اللوجستيات.",
+        "descriptionEn": "Logistics management service.",
+        "vattable": true,
+        "vatValue": 15.0
+    },
+    {
+        "id": "k0b9f90e-4f6a-4c77-9057-1e8c92925ff8",
+        "serviceName": "Real Estate Valuation",
+        "serviceNameAr": "تقييم العقارات",
+        "code": "R-E01",
+        "type": "Real Estate",
+        "status": "active",
+        "price": 5500.0,
+        "descriptionAr": "خدمة تقييم العقارات.",
+        "descriptionEn": "Real estate valuation service.",
+        "vattable": true,
+        "vatValue": 15.0
+    },
+    {
+        "id": "l1b9f90e-4f6a-4c77-9057-1e8c92925ff8",
+        "serviceName": "Insurance Brokerage",
+        "serviceNameAr": "وساطة التأمين",
+        "code": "I-B01",
+        "type": "Insurance",
+        "status": "active",
+        "price": 2500.0,
+        "descriptionAr": "خدمة وساطة التأمين.",
+        "descriptionEn": "Insurance brokerage service.",
+        "vattable": true,
+        "vatValue": 15.0
+    },
+    {
+        "id": "b91d6f8e-3f9a-4328-99d1-7df8e5eaff5c",
+        "serviceName": "Health Insurance",
+        "serviceNameAr": "التأمين الصحي",
+        "code": "H-I01",
+        "type": "Insurance",
+        "status": "active",
+        "price": 3000.0,
+        "descriptionAr": "خدمة التأمين الصحي.",
+        "descriptionEn": "Health insurance service.",
+        "vattable": true,
+        "vatValue": 15.0
+    },
+    {
+        "id": "f3b1a4d0-8c6f-4c7d-bf2e-7f6f2d8aafeb",
+        "serviceName": "Business Licensing",
+        "serviceNameAr": "ترخيص الأعمال",
+        "code": "B-L01",
+        "type": "Licensing",
+        "status": "inactive",
+        "price": 2000.0,
+        "descriptionAr": "خدمة ترخيص الأعمال.",
+        "descriptionEn": "Service for business licensing.",
+        "vattable": true,
+        "vatValue": 12.5
+    },
+    {
+        "id": "d4e9f90e-4f6a-4c77-9057-1e8c92925ff9",
+        "serviceName": "Financial Consulting",
+        "serviceNameAr": "استشارات مالية",
+        "code": "F-C01",
+        "type": "Finance",
+        "status": "active",
+        "price": 2500.0,
+        "descriptionAr": "خدمة استشارات مالية.",
+        "descriptionEn": "Financial consulting service.",
+        "vattable": true,
+        "vatValue": 15.0
+    },
+    {
+        "id": "e5b9f90e-4f6a-4c77-9057-1e8c92925ff8",
+        "serviceName": "Construction Permit",
+        "serviceNameAr": "تصريح البناء",
+        "code": "C-P01",
+        "type": "Construction",
+        "status": "active",
+        "price": 5000.0,
+        "descriptionAr": "خدمة تصريح البناء.",
+        "descriptionEn": "Construction permit service.",
+        "vattable": true,
+        "vatValue": 15.0
+    },
+    {
+        "id": "a37f5a65-1d5d-420d-9128-54675930cb71",
+        "serviceName": "Environmental Assessment",
+        "serviceNameAr": "تقييم بيئي",
+        "code": "E-A01",
+        "type": "Environmental",
+        "status": "active",
+        "price": 3000.0,
+        "descriptionAr": "خدمة تقييم بيئي.",
+        "descriptionEn": "Environmental assessment service.",
+        "vattable": true,
+        "vatValue": 15.0
+    },
+    {
+        "id": "b91d6f8e-3f9a-4328-99d1-7df8e5eaff5c",
+        "serviceName": "IT Support",
+        "serviceNameAr": "دعم تكنولوجيا المعلومات",
+        "code": "T-S01",
+        "type": "Technology",
+        "status": "inactive",
+        "price": 1000.0,
+        "descriptionAr": "خدمة دعم تكنولوجيا المعلومات.",
+        "descriptionEn": "IT support service.",
+        "vattable": true,
+        "vatValue": 15.0
+    },
+    {
+        "id": "f3b1a4d0-8c6f-4c7d-bf2e-7f6f2d8aafeb",
+        "serviceName": "Cleaning Services",
+        "serviceNameAr": "خدمات التنظيف",
+        "code": "S-C01",
+        "type": "Services",
+        "status": "active",
+        "price": 800.0,
+        "descriptionAr": "خدمة التنظيف.",
+        "descriptionEn": "Cleaning services.",
+        "vattable": true,
+        "vatValue": 15.0
+    },
+    {
+        "id": "e5b9f90e-4f6a-4c77-9057-1e8c92925ff8",
+        "serviceName": "Property Transfer",
+        "serviceNameAr": "نقل الملكية",
+        "code": "P-T01",
+        "type": "Real Estate",
+        "status": "inactive",
+        "price": 1500.0,
+        "descriptionAr": "خدمة لنقل ملكية العقار.",
+        "descriptionEn": "Service for transferring property ownership.",
+        "vattable": true,
+        "vatValue": 15.0
     },
     {
         "id": "a37f5a65-1d5d-420d-9128-54675930cb71",
         "serviceName": "Vehicle Registration",
+        "serviceNameAr": "تسجيل المركبات",
         "code": "V-R01",
         "type": "Transportation",
-        "status": "active"
+        "status": "active",
+        "price": 500.0,
+        "descriptionAr": "خدمة تسجيل المركبات.",
+        "descriptionEn": "Registration service for vehicles.",
+        "vattable": true,
+        "vatValue": 10.0
     },
     {
-        "id": "adf3e2b1-d6c9-4b17-b3b9-e5c4a5f04f1d",
-        "serviceName": "Business Licensing",
-        "code": "B-L02",
-        "type": "Business",
-        "status": "inactive"
-    },
-    {
-        "id": "b61474ed-7c1e-482d-a595-1d049e1d9458",
-        "serviceName": "Tax Consultation",
-        "code": "T-C03",
-        "type": "Finance",
-        "status": "active"
-    },
-    {
-        "id": "e5c9820c-0a4e-4815-9e0f-d7c0c01d3b6c",
-        "serviceName": "Health Insurance",
-        "code": "H-I04",
-        "type": "Insurance",
-        "status": "inactive"
-    },
-    {
-        "id": "d2cdd24e-b617-4e1d-8b92-69bf0a7ac3ed",
-        "serviceName": "Property Valuation",
-        "code": "P-V05",
-        "type": "Real Estate",
-        "status": "active"
-    },
-    {
-        "id": "c3735c43-843b-48d1-a8ec-4a3178bdfc18",
-        "serviceName": "Construction Permits",
-        "code": "C-P06",
-        "type": "Construction",
-        "status": "active"
-    },
-    {
-        "id": "ef3bc62f-3ad2-4d77-b50d-7a3d62131276",
-        "serviceName": "Environmental Assessment",
-        "code": "E-A07",
-        "type": "Environmental",
-        "status": "inactive"
-    },
-    {
-        "id": "95f41a25-3bb3-42df-b3d4-6121f57b5e5e",
-        "serviceName": "Event Planning",
-        "code": "E-P08",
+        "id": "c2d9f90e-4f6a-4c77-9057-1e8c92925ff8",
+        "serviceName": "Legal Advisory",
+        "serviceNameAr": "استشارات قانونية",
+        "code": "L-A01",
         "type": "Services",
-        "status": "active"
+        "status": "inactive",
+        "price": 3500.0,
+        "descriptionAr": "خدمة استشارات قانونية.",
+        "descriptionEn": "Legal advisory service.",
+        "vattable": true,
+        "vatValue": 15.0
     },
     {
-        "id": "b8314c21-2d7f-4b7b-a7d7-3c99fd4f3018",
-        "serviceName": "IT Support",
-        "code": "I-S09",
+        "id": "d3e9f90e-4f6a-4c77-9057-1e8c92925ff9",
+        "serviceName": "Market Research",
+        "serviceNameAr": "أبحاث السوق",
+        "code": "M-R01",
+        "type": "Business",
+        "status": "active",
+        "price": 4000.0,
+        "descriptionAr": "خدمة أبحاث السوق.",
+        "descriptionEn": "Market research service.",
+        "vattable": true,
+        "vatValue": 15.0
+    },
+    {
+        "id": "e4b9f90e-4f6a-4c77-9057-1e8c92925ff8",
+        "serviceName": "Cybersecurity",
+        "serviceNameAr": "الأمن السيبراني",
+        "code": "C-S01",
         "type": "Technology",
-        "status": "active"
+        "status": "inactive",
+        "price": 4500.0,
+        "descriptionAr": "خدمة الأمن السيبراني.",
+        "descriptionEn": "Cybersecurity service.",
+        "vattable": true,
+        "vatValue": 15.0
+    },
+    {
+        "id": "f5b9f90e-4f6a-4c77-9057-1e8c92925ff8",
+        "serviceName": "Project Management",
+        "serviceNameAr": "إدارة المشاريع",
+        "code": "P-M01",
+        "type": "Business",
+        "status": "active",
+        "price": 5000.0,
+        "descriptionAr": "خدمة إدارة المشاريع.",
+        "descriptionEn": "Project management service.",
+        "vattable": true,
+        "vatValue": 15.0
+    },
+    {
+        "id": "g6b9f90e-4f6a-4c77-9057-1e8c92925ff8",
+        "serviceName": "Tax Consulting",
+        "serviceNameAr": "استشارات ضريبية",
+        "code": "T-C01",
+        "type": "Finance",
+        "status": "active",
+        "price": 3000.0,
+        "descriptionAr": "خدمة استشارات ضريبية.",
+        "descriptionEn": "Tax consulting service.",
+        "vattable": true,
+        "vatValue": 15.0
+    },
+    {
+        "id": "h7b9f90e-4f6a-4c77-9057-1e8c92925ff8",
+        "serviceName": "Architectural Design",
+        "serviceNameAr": "تصميم معماري",
+        "code": "A-D01",
+        "type": "Construction",
+        "status": "active",
+        "price": 6000.0,
+        "descriptionAr": "خدمة تصميم معماري.",
+        "descriptionEn": "Architectural design service.",
+        "vattable": true,
+        "vatValue": 15.0
+    },
+    {
+        "id": "i8b9f90e-4f6a-4c77-9057-1e8c92925ff8",
+        "serviceName": "Environmental Consulting",
+        "serviceNameAr": "استشارات بيئية",
+        "code": "E-C01",
+        "type": "Environmental",
+        "status": "active",
+        "price": 3500.0,
+        "descriptionAr": "خدمة استشارات بيئية.",
+        "descriptionEn": "Environmental consulting service.",
+        "vattable": true,
+        "vatValue": 15.0
+    },
+    {
+        "id": "j9b9f90e-4f6a-4c77-9057-1e8c92925ff8",
+        "serviceName": "Logistics Management",
+        "serviceNameAr": "إدارة اللوجستيات",
+        "code": "L-M01",
+        "type": "Transportation",
+        "status": "active",
+        "price": 4500.0,
+        "descriptionAr": "خدمة إدارة اللوجستيات.",
+        "descriptionEn": "Logistics management service.",
+        "vattable": true,
+        "vatValue": 15.0
+    },
+    {
+        "id": "k0b9f90e-4f6a-4c77-9057-1e8c92925ff8",
+        "serviceName": "Real Estate Valuation",
+        "serviceNameAr": "تقييم العقارات",
+        "code": "R-E01",
+        "type": "Real Estate",
+        "status": "active",
+        "price": 5500.0,
+        "descriptionAr": "خدمة تقييم العقارات.",
+        "descriptionEn": "Real estate valuation service.",
+        "vattable": true,
+        "vatValue": 15.0
+    },
+    {
+        "id": "l1b9f90e-4f6a-4c77-9057-1e8c92925ff8",
+        "serviceName": "Insurance Brokerage",
+        "serviceNameAr": "وساطة التأمين",
+        "code": "I-B01",
+        "type": "Insurance",
+        "status": "active",
+        "price": 2500.0,
+        "descriptionAr": "خدمة وساطة التأمين.",
+        "descriptionEn": "Insurance brokerage service.",
+        "vattable": true,
+        "vatValue": 15.0
+    },
+    {
+        "id": "b91d6f8e-3f9a-4328-99d1-7df8e5eaff5c",
+        "serviceName": "Health Insurance",
+        "serviceNameAr": "التأمين الصحي",
+        "code": "H-I01",
+        "type": "Insurance",
+        "status": "active",
+        "price": 3000.0,
+        "descriptionAr": "خدمة التأمين الصحي.",
+        "descriptionEn": "Health insurance service.",
+        "vattable": true,
+        "vatValue": 15.0
+    },
+    {
+        "id": "f3b1a4d0-8c6f-4c7d-bf2e-7f6f2d8aafeb",
+        "serviceName": "Business Licensing",
+        "serviceNameAr": "ترخيص الأعمال",
+        "code": "B-L01",
+        "type": "Licensing",
+        "status": "inactive",
+        "price": 2000.0,
+        "descriptionAr": "خدمة ترخيص الأعمال.",
+        "descriptionEn": "Service for business licensing.",
+        "vattable": true,
+        "vatValue": 12.5
+    },
+    {
+        "id": "d4e9f90e-4f6a-4c77-9057-1e8c92925ff9",
+        "serviceName": "Financial Consulting",
+        "serviceNameAr": "استشارات مالية",
+        "code": "F-C01",
+        "type": "Finance",
+        "status": "active",
+        "price": 2500.0,
+        "descriptionAr": "خدمة استشارات مالية.",
+        "descriptionEn": "Financial consulting service.",
+        "vattable": true,
+        "vatValue": 15.0
     },
     {
         "id": "e5b9f90e-4f6a-4c77-9057-1e8c92925ff8",
-        "serviceName": "Property Transfer",
-        "code": "P-T01",
-        "type": "Real Estate",
-        "status": "active"
+        "serviceName": "Construction Permit",
+        "serviceNameAr": "تصريح البناء",
+        "code": "C-P01",
+        "type": "Construction",
+        "status": "active",
+        "price": 5000.0,
+        "descriptionAr": "خدمة تصريح البناء.",
+        "descriptionEn": "Construction permit service.",
+        "vattable": true,
+        "vatValue": 15.0
     },
     {
         "id": "a37f5a65-1d5d-420d-9128-54675930cb71",
-        "serviceName": "Vehicle Registration",
-        "code": "V-R01",
-        "type": "Transportation",
-        "status": "active"
-    },
-    {
-        "id": "adf3e2b1-d6c9-4b17-b3b9-e5c4a5f04f1d",
-        "serviceName": "Business Licensing",
-        "code": "B-L02",
-        "type": "Business",
-        "status": "inactive"
-    },
-    {
-        "id": "b61474ed-7c1e-482d-a595-1d049e1d9458",
-        "serviceName": "Tax Consultation",
-        "code": "T-C03",
-        "type": "Finance",
-        "status": "active"
-    },
-    {
-        "id": "e5c9820c-0a4e-4815-9e0f-d7c0c01d3b6c",
-        "serviceName": "Health Insurance",
-        "code": "H-I04",
-        "type": "Insurance",
-        "status": "inactive"
-    },
-    {
-        "id": "d2cdd24e-b617-4e1d-8b92-69bf0a7ac3ed",
-        "serviceName": "Property Valuation",
-        "code": "P-V05",
-        "type": "Real Estate",
-        "status": "active"
-    },
-    {
-        "id": "c3735c43-843b-48d1-a8ec-4a3178bdfc18",
-        "serviceName": "Construction Permits",
-        "code": "C-P06",
-        "type": "Construction",
-        "status": "active"
-    },
-    {
-        "id": "ef3bc62f-3ad2-4d77-b50d-7a3d62131276",
         "serviceName": "Environmental Assessment",
-        "code": "E-A07",
+        "serviceNameAr": "تقييم بيئي",
+        "code": "E-A01",
         "type": "Environmental",
-        "status": "inactive"
+        "status": "active",
+        "price": 3000.0,
+        "descriptionAr": "خدمة تقييم بيئي.",
+        "descriptionEn": "Environmental assessment service.",
+        "vattable": true,
+        "vatValue": 15.0
     },
     {
-        "id": "95f41a25-3bb3-42df-b3d4-6121f57b5e5e",
-        "serviceName": "Event Planning",
-        "code": "E-P08",
-        "type": "Services",
-        "status": "active"
-    },
-    {
-        "id": "b8314c21-2d7f-4b7b-a7d7-3c99fd4f3018",
+        "id": "b91d6f8e-3f9a-4328-99d1-7df8e5eaff5c",
         "serviceName": "IT Support",
-        "code": "I-S09",
+        "serviceNameAr": "دعم تكنولوجيا المعلومات",
+        "code": "T-S01",
         "type": "Technology",
-        "status": "active"
+        "status": "inactive",
+        "price": 1000.0,
+        "descriptionAr": "خدمة دعم تكنولوجيا المعلومات.",
+        "descriptionEn": "IT support service.",
+        "vattable": true,
+        "vatValue": 15.0
     },
     {
-        "id": "e5b9f90e-4f6a-4c77-9057-1e8c92925ff8",
-        "serviceName": "Property Transfer",
-        "code": "P-T01",
-        "type": "Real Estate",
-        "status": "active"
-    },
-    {
-        "id": "a37f5a65-1d5d-420d-9128-54675930cb71",
-        "serviceName": "Vehicle Registration",
-        "code": "V-R01",
-        "type": "Transportation",
-        "status": "active"
-    },
-    {
-        "id": "adf3e2b1-d6c9-4b17-b3b9-e5c4a5f04f1d",
-        "serviceName": "Business Licensing",
-        "code": "B-L02",
-        "type": "Business",
-        "status": "inactive"
-    },
-    {
-        "id": "b61474ed-7c1e-482d-a595-1d049e1d9458",
-        "serviceName": "Tax Consultation",
-        "code": "T-C03",
-        "type": "Finance",
-        "status": "active"
-    },
-    {
-        "id": "e5c9820c-0a4e-4815-9e0f-d7c0c01d3b6c",
-        "serviceName": "Health Insurance",
-        "code": "H-I04",
-        "type": "Insurance",
-        "status": "inactive"
-    },
-    {
-        "id": "d2cdd24e-b617-4e1d-8b92-69bf0a7ac3ed",
-        "serviceName": "Property Valuation",
-        "code": "P-V05",
-        "type": "Real Estate",
-        "status": "active"
-    },
-    {
-        "id": "c3735c43-843b-48d1-a8ec-4a3178bdfc18",
-        "serviceName": "Construction Permits",
-        "code": "C-P06",
-        "type": "Construction",
-        "status": "active"
-    },
-    {
-        "id": "ef3bc62f-3ad2-4d77-b50d-7a3d62131276",
-        "serviceName": "Environmental Assessment",
-        "code": "E-A07",
-        "type": "Environmental",
-        "status": "inactive"
-    },
-    {
-        "id": "95f41a25-3bb3-42df-b3d4-6121f57b5e5e",
-        "serviceName": "Event Planning",
-        "code": "E-P08",
+        "id": "f3b1a4d0-8c6f-4c7d-bf2e-7f6f2d8aafeb",
+        "serviceName": "Cleaning Services",
+        "serviceNameAr": "خدمات التنظيف",
+        "code": "S-C01",
         "type": "Services",
-        "status": "active"
-    },
-    {
-        "id": "b8314c21-2d7f-4b7b-a7d7-3c99fd4f3018",
-        "serviceName": "IT Support",
-        "code": "I-S09",
-        "type": "Technology",
-        "status": "active"
-    },
-    {
-        "id": "e5b9f90e-4f6a-4c77-9057-1e8c92925ff8",
-        "serviceName": "Property Transfer",
-        "code": "P-T01",
-        "type": "Real Estate",
-        "status": "active"
-    },
-    {
-        "id": "a37f5a65-1d5d-420d-9128-54675930cb71",
-        "serviceName": "Vehicle Registration",
-        "code": "V-R01",
-        "type": "Transportation",
-        "status": "active"
-    },
-    {
-        "id": "adf3e2b1-d6c9-4b17-b3b9-e5c4a5f04f1d",
-        "serviceName": "Business Licensing",
-        "code": "B-L02",
-        "type": "Business",
-        "status": "inactive"
-    },
-    {
-        "id": "b61474ed-7c1e-482d-a595-1d049e1d9458",
-        "serviceName": "Tax Consultation",
-        "code": "T-C03",
-        "type": "Finance",
-        "status": "active"
-    },
-    {
-        "id": "e5c9820c-0a4e-4815-9e0f-d7c0c01d3b6c",
-        "serviceName": "Health Insurance",
-        "code": "H-I04",
-        "type": "Insurance",
-        "status": "inactive"
-    },
-    {
-        "id": "d2cdd24e-b617-4e1d-8b92-69bf0a7ac3ed",
-        "serviceName": "Property Valuation",
-        "code": "P-V05",
-        "type": "Real Estate",
-        "status": "active"
-    },
-    {
-        "id": "c3735c43-843b-48d1-a8ec-4a3178bdfc18",
-        "serviceName": "Construction Permits",
-        "code": "C-P06",
-        "type": "Construction",
-        "status": "active"
-    },
-    {
-        "id": "ef3bc62f-3ad2-4d77-b50d-7a3d62131276",
-        "serviceName": "Environmental Assessment",
-        "code": "E-A07",
-        "type": "Environmental",
-        "status": "inactive"
-    },
-    {
-        "id": "95f41a25-3bb3-42df-b3d4-6121f57b5e5e",
-        "serviceName": "Event Planning",
-        "code": "E-P08",
-        "type": "Services",
-        "status": "active"
-    },
-    {
-        "id": "b8314c21-2d7f-4b7b-a7d7-3c99fd4f3018",
-        "serviceName": "IT Support",
-        "code": "I-S09",
-        "type": "Technology",
-        "status": "active"
+        "status": "active",
+        "price": 800.0,
+        "descriptionAr": "خدمة التنظيف.",
+        "descriptionEn": "Cleaning services.",
+        "vattable": true,
+        "vatValue": 15.0
     }
 ]
