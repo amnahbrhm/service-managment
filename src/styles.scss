@@ -1,9 +1,15 @@
+@import "primeicons/primeicons.css";
 :root {
-  --color-primary-300: #70819d;
+
   --color-primary-200: #4d6ba5;
+  --color-primary-300: #70819d;
   --color-primary-100: #007bff;
   --color-primary-50: #d2dce0;
   --color-primary-10: #e4ebee;
+  --color-primary-400: #E8EEF1;
+  --color-primary-500: #F4F8FA;
+  
+  --color-placeholder-400: #A4B1C4;
 
   --color-secondary-600: #333333;
   --color-secondary-200: #888888;
@@ -19,7 +25,8 @@
   --color-border: #e2e7f1;
   --color-text-blue: #52BDCC;
 
-  --menu-width: 250px;
+  --menu-width: 230px;
+  --border-radius: 5px;
 }
 
 @font-face {
@@ -113,13 +120,15 @@ body {
   display: inline-block;
 }
 
-// text colors start
 .text-blue {
   color: var(--color-text-blue);
 }
 
-// test colors end
-
 a {
   text-decoration: none;
+}
+
+::placeholder {
+  color: var(--color-placeholder-400);
+  opacity: 1;
 }
