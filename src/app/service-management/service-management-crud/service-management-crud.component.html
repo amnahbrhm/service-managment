@@ -4,43 +4,42 @@
         <div class="formgrid grid">
             <div class="field col">
                 <label for="serviceName">Service Name (EN)</label>
-                <input id="serviceName" class="w-full" formControlName="serviceName" pInputText />
+                <input id="serviceName" class="w-full" formControlName="serviceName" pInputText aria-label="Service Name in English" />
             </div>
             <div class="field col">
                 <label for="serviceNameAr">Service Name (AR)</label>
-                <input id="serviceNameAr" class="w-full" formControlName="serviceNameAr" pInputText />
+                <input id="serviceNameAr" class="w-full" formControlName="serviceNameAr" pInputText aria-label="Service Name in Arabic" />
             </div>
 
             <div class="field col">
                 <label for="type">Service Type</label>
-                <input id="type" class="w-full" formControlName="type" pInputText />
+                <input id="type" class="w-full" formControlName="type" pInputText aria-label="Service Type" />
             </div>
         </div>
         <p-divider type="solid" />
         <div class="formgrid grid">
             <div class="field col">
                 <label for="code">Service Code</label>
-                <input id="code" class="w-full" formControlName="code" pInputText />
+                <input id="code" class="w-full" formControlName="code" pInputText aria-label="Service Code" />
             </div>
             <div class="field col">
                 <label for="price">Price List</label>
-                <input id="price" class="w-full" formControlName="price" pInputText />
+                <input id="price" class="w-full" formControlName="price" pInputText aria-label="Price List" />
             </div>
         </div>
     </p-panel>
     <p-panel header="Service Description">
         <div class="field col">
             <label for="descriptionAr">Service Arabic Description</label>
-            <!-- <input id="descriptionAr" class="w-full" formControlName="descriptionAr" pInputText /> -->
             <textarea rows="1" cols="30" id="descriptionAr" [autoResize]="true" pInputTextarea class="w-full"
-                formControlName="descriptionAr">
+                formControlName="descriptionAr" aria-label="Service Arabic Description">
             </textarea>
         </div>
         <p-divider type="solid" />
         <div class="field col">
             <label for="descriptionEn">Service English Description</label>
             <textarea rows="1" cols="30" class="w-full" id="descriptionEn" [autoResize]="true" pInputTextarea
-                class="w-full" formControlName="descriptionEn">
+                class="w-full" formControlName="descriptionEn" aria-label="Service English Description">
             </textarea>
         </div>
     </p-panel>
@@ -49,20 +48,21 @@
 
             <div class="field col">
                 <label for="vattable">Has VAT?</label>
-                <input id="vattable" class="w-full" formControlName="vattable" pInputText />
+                <input id="vattable" class="w-full" formControlName="vattable" pInputText aria-label="Has VAT" />
             </div>
             <div class="field col">
                 <label for="vatValue">VAT (%)</label>
-                <input id="vatValue" class="w-full" formControlName="vatValue" pInputText />
+                <input id="vatValue" class="w-full" formControlName="vatValue" pInputText aria-label="VAT Percentage" />
             </div>
         </div>
     </p-panel>
-    <div class="flex justify-content-between">
-        <p-button class="align-self-end" [outlined]="true" [routerLink]="['/service-management']">
-            <i class="pi pi-chevron-left mr-2"></i> Back
-        </p-button>
-        <p-button type="submit" class="align-self-end" *ngIf="operationType === 'edit' || operationType == 'new'">
+    <!-- Row Reverse for whos tapping on keyboard gets add/ edit button first -->
+    <div class="flex justify-content-between flex-row-reverse">
+        <p-button type="submit" *ngIf="operationType === 'edit' || operationType == 'new'" [attr.aria-label]="operationType === 'edit' ? 'Edit':'Add' + 'Service'">
             {{operationType === 'edit' ? 'Edit':'Add'}} Service
+        </p-button>
+        <p-button  [outlined]="true" [routerLink]="['/service-management']" aria-label="Back" aria-label="back">
+            <i class="pi pi-chevron-left mr-2"></i> Back
         </p-button>
     </div>
 </form>
