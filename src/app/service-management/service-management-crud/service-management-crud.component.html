@@ -5,28 +5,28 @@
             <div class="field col">
                 <label for="serviceName">Service Name (EN)</label>
                 <input id="serviceName" class="w-full" formControlName="serviceName" pInputText
-                    aria-label="Service Name in English" />
+                    aria-label="Service Name in English" placeholder="Enter Service Name in English" />
             </div>
             <div class="field col">
                 <label for="serviceNameAr">Service Name (AR)</label>
                 <input id="serviceNameAr" class="w-full" formControlName="serviceNameAr" pInputText
-                    aria-label="Service Name in Arabic" />
+                    aria-label="Service Name in Arabic" placeholder="أدخل اسم الخدمة باللغة العربية" />
             </div>
 
             <div class="field col">
                 <label for="type">Service Type</label>
-                <input id="type" class="w-full" formControlName="type" pInputText aria-label="Service Type" />
+                <input id="type" class="w-full" formControlName="type" pInputText aria-label="Service Type" placeholder="Enter Service Type" />
             </div>
         </div>
         <p-divider type="solid" />
         <div class="formgrid grid">
             <div class="field col">
                 <label for="code">Service Code</label>
-                <input id="code" class="w-full" formControlName="code" pInputText aria-label="Service Code" />
+                <input id="code" class="w-full" formControlName="code" pInputText aria-label="Service Code" placeholder="Enter Service Code" />
             </div>
             <div class="field col">
                 <label for="price">Price List</label>
-                <input id="price" class="w-full" formControlName="price" pInputText aria-label="Price List" />
+                <input id="price" class="w-full" formControlName="price" pInputText aria-label="Price List" placeholder="Enter Price List" />
             </div>
         </div>
     </p-panel>
@@ -34,14 +34,14 @@
         <div class="field col">
             <label for="descriptionAr">Service Arabic Description</label>
             <textarea rows="1" cols="30" id="descriptionAr" [autoResize]="true" pInputTextarea class="w-full"
-                formControlName="descriptionAr" aria-label="Service Arabic Description">
+                formControlName="descriptionAr" aria-label="Service Arabic Description" placeholder="أدخل الوصف باللغة العربية">
             </textarea>
         </div>
         <p-divider type="solid" />
         <div class="field col">
             <label for="descriptionEn">Service English Description</label>
             <textarea rows="1" cols="30" class="w-full" id="descriptionEn" [autoResize]="true" pInputTextarea
-                class="w-full" formControlName="descriptionEn" aria-label="Service English Description">
+                class="w-full" formControlName="descriptionEn" aria-label="Service English Description" placeholder="Enter English Description">
             </textarea>
         </div>
     </p-panel>
@@ -50,11 +50,11 @@
 
             <div class="field col">
                 <label for="vattable">Has VAT?</label>
-                <input id="vattable" class="w-full" formControlName="vattable" pInputText aria-label="Has VAT" />
+                <input id="vattable" class="w-full" formControlName="vattable" pInputText aria-label="Has VAT" placeholder="Enter VAT Information" />
             </div>
             <div class="field col">
                 <label for="vatValue">VAT (%)</label>
-                <input id="vatValue" class="w-full" formControlName="vatValue" pInputText aria-label="VAT Percentage" />
+                <input id="vatValue" class="w-full" formControlName="vatValue" pInputText aria-label="VAT Percentage" placeholder="Enter VAT Percentage" />
             </div>
         </div>
     </p-panel>
