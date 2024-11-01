@@ -17,7 +17,7 @@
         border-bottom: 2px solid var(--color-primary-50);
         color: var(--color-primary-300);
         font-weight: 500;
-        background-color: var(--color-secondary-100)
+        background-color: var(--color-secondary-100);
     }
 
     .p-datatable thead tr {
@@ -55,6 +55,7 @@
         background: none;
         color: var(--color-text-blue);
     }
+
     .p-button.p-button-link {
         color: var(--color-primary-300);
         background: none;
@@ -81,27 +82,40 @@
         border: 1px solid var(--color-primary-50);
     }
 
-    .p-paginator .p-paginator-first, .p-paginator .p-paginator-prev, .p-paginator .p-paginator-next, .p-paginator .p-paginator-last {
+    .p-paginator .p-paginator-first,
+    .p-paginator .p-paginator-prev,
+    .p-paginator .p-paginator-next,
+    .p-paginator .p-paginator-last {
         border: 1px solid var(--color-primary-50);
     }
-    
+
     span.p-paginator-pages {
         margin-right: 10px;
     }
 
     .p-panel .p-panel-header {
         background-color: var(--color-primary-500);
-        background-image: url('/assets/images/pattren-mini.svg'); /* Add your SVG file path here */
-        background-repeat: no-repeat; /* Prevents the image from repeating */
-        background-position: right top; /* Centers the SVG in the sidebar */
+        background-image: url("/assets/images/pattren-mini.svg");
+        /* Add your SVG file path here */
+        background-repeat: no-repeat;
+        /* Prevents the image from repeating */
+        background-position: right top;
+        /* Centers the SVG in the sidebar */
         background-size: 37px auto;
         border: 1px solid var(--color-primary-400);
         border-bottom: none;
         border-top-left-radius: var(--border-radius);
         border-top-right-radius: var(--border-radius);
-        color:var(--color-primary-300)
-    
+        color: var(--color-primary-300);
     }
 
+    .p-breadcrumb .p-breadcrumb-list li .p-menuitem-link .p-menuitem-icon {
+        display: none;
+    }
 
+    .p-breadcrumb {
+        border: none;
+        font-size: 14px;
+        font-weight: 400;
+    }
 }

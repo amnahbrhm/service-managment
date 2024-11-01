@@ -73,7 +73,7 @@ export class ServiceManagementCrudComponent implements OnInit {
             price: this.service.price + ' SR',
             descriptionAr: this.service.descriptionAr,
             descriptionEn: this.service.descriptionEn,
-            vattable: this.service.vattable,
+            vattable: this.service.vattable ? 'Yes' : 'No',
             vatValue: this.service.vatValue + ' %',
           });
           console.log('service', this.service);

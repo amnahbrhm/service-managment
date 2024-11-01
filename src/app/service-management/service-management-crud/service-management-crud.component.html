@@ -4,11 +4,13 @@
         <div class="formgrid grid">
             <div class="field col">
                 <label for="serviceName">Service Name (EN)</label>
-                <input id="serviceName" class="w-full" formControlName="serviceName" pInputText aria-label="Service Name in English" />
+                <input id="serviceName" class="w-full" formControlName="serviceName" pInputText
+                    aria-label="Service Name in English" />
             </div>
             <div class="field col">
                 <label for="serviceNameAr">Service Name (AR)</label>
-                <input id="serviceNameAr" class="w-full" formControlName="serviceNameAr" pInputText aria-label="Service Name in Arabic" />
+                <input id="serviceNameAr" class="w-full" formControlName="serviceNameAr" pInputText
+                    aria-label="Service Name in Arabic" />
             </div>
 
             <div class="field col">
@@ -57,11 +59,12 @@
         </div>
     </p-panel>
     <!-- Row Reverse for whos tapping on keyboard gets add/ edit button first -->
-    <div class="flex justify-content-between flex-row-reverse">
-        <p-button type="submit" *ngIf="operationType === 'edit' || operationType == 'new'" [attr.aria-label]="operationType === 'edit' ? 'Edit':'Add' + 'Service'">
+    <div class="flex justify-content-between" [ngClass]="operationType === 'view' ? '' :'flex-row-reverse'">
+        <p-button type="submit" *ngIf="operationType === 'edit' || operationType == 'new'"
+            [attr.aria-label]="operationType === 'edit' ? 'Edit':'Add' + 'Service'">
             {{operationType === 'edit' ? 'Edit':'Add'}} Service
         </p-button>
-        <p-button  [outlined]="true" [routerLink]="['/service-management']" aria-label="Back" aria-label="back">
+        <p-button [outlined]="true" [routerLink]="['/service-management']" aria-label="Back" aria-label="back">
             <i class="pi pi-chevron-left mr-2"></i> Back
         </p-button>
     </div>
