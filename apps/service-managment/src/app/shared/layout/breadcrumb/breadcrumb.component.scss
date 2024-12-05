@@ -1,0 +1,14 @@
+.breadcrumbs {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+}
+li.p-menuitem-separator:before::before {
+  content: "/";
+  font-size: 16px; /* Adjust as needed */
+  color: inherit; /* Use the current text color */
+}
+@layer {
+  .p-breadcrumb .p-breadcrumb-chevron {
+    display: none;
+  }
+}
