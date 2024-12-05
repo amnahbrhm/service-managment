@@ -2,13 +2,14 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { PaginatorModule } from 'primeng/paginator';
 import { TableModule } from 'primeng/table';
-import { MockHttpService } from '../../shared/services/mock-http.service';
 import { RouterModule } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
 import { DropdownModule } from 'primeng/dropdown';
 import { InputTextModule } from 'primeng/inputtext';
 import { InputGroupModule } from 'primeng/inputgroup';
 import { InputGroupAddonModule } from 'primeng/inputgroupaddon';
+import { ApisService } from '../sm.service';
+import { HttpEventType } from '@angular/common/http';
 @Component({
   selector: 'app-service-management-list',
   standalone: true,
@@ -50,7 +51,7 @@ export class ServiceManagementListComponent {
     'Technology',
   ];
   totalRecords: number = 0;
-  constructor(private httpService: MockHttpService) {
+  constructor(private service: ApisService) {
     this.loadData();
   }
 
@@ -59,16 +60,20 @@ export class ServiceManagementListComponent {
     this.page = fromFilter ? 1 : this.page;
     this.pageSize = fromFilter ? 10 : this.pageSize;
     console.log('page', this.page, this.pageSize, filterObject);
-    this.httpService
-      .get('assets/dummy-data/services.json', {
+    this.service
+      .getServicesCancellation({
         page: this.page,
-        pageSize: this.pageSize,
+        pagination: this.pageSize,
         ...filterObject,
       })
       .subscribe({
         next: (obj) => {
-          this.services = obj.data;
-          this.totalRecords = obj.totalRecords;
+          if (obj.type === HttpEventType.Response) {
+            this.services = obj.body?.Services || [];
+            this.totalRecords = obj.body?.rowsCount || 0;
+            console.log('services', this.services);
+            
+          }
         },
         error: (error) => {
           console.error('error', error);
