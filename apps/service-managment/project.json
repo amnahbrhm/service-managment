@@ -7,13 +7,17 @@
   "tags": [],
   "targets": {
     "build": {
-      "executor": "@angular-devkit/build-angular:browser",
-      "outputs": ["{options.outputPath}"],
+      "executor": "@nx/angular:webpack-browser",
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/service-managment",
         "index": "apps/service-managment/src/index.html",
         "main": "apps/service-managment/src/main.ts",
-        "polyfills": ["zone.js"],
+        "polyfills": [
+          "zone.js"
+        ],
         "tsConfig": "apps/service-managment/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": [
@@ -30,7 +34,11 @@
           "node_modules/primeng/resources/themes/saga-blue/theme.css",
           "apps/service-managment/public/theme.scss"
         ],
-        "scripts": []
+        "scripts": [],
+        "customWebpackConfig": {
+          "path": "apps/service-managment/webpack.config.js"
+        },
+        "commonChunk": false
       },
       "configurations": {
         "production": {
@@ -46,7 +54,10 @@
               "maximumError": "4kb"
             }
           ],
-          "outputHashing": "all"
+          "outputHashing": "all",
+          "customWebpackConfig": {
+            "path": "apps/service-managment/webpack.prod.config.js"
+          }
         },
         "development": {
           "buildOptimizer": false,
@@ -60,7 +71,7 @@
       "defaultConfiguration": "production"
     },
     "serve": {
-      "executor": "@angular-devkit/build-angular:dev-server",
+      "executor": "@nx/angular:dev-server",
       "configurations": {
         "production": {
           "buildTarget": "service-managment:build:production"
@@ -70,14 +81,17 @@
         }
       },
       "options": {
-        "host": "0.0.0.0"
+        "host": "0.0.0.0",
+        "port": 4200,
+        "publicHost": "http://localhost:4200"
       },
       "defaultConfiguration": "development"
     },
     "extract-i18n": {
-      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "executor": "ngx-build-plus:extract-i18n",
       "options": {
-        "buildTarget": "service-managment:build"
+        "buildTarget": "service-managment:build",
+        "extraWebpackConfig": "apps/service-managment/webpack.config.js"
       }
     },
     "lint": {
@@ -85,7 +99,9 @@
     },
     "test": {
       "executor": "@nx/jest:jest",
-      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "outputs": [
+        "{workspaceRoot}/coverage/{projectRoot}"
+      ],
       "options": {
         "jestConfig": "apps/service-managment/jest.config.ts"
       }
