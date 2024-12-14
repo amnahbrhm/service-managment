@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import { PaginatorModule } from 'primeng/paginator';
 import { TableModule } from 'primeng/table';
 import { RouterModule } from '@angular/router';
@@ -10,6 +10,7 @@ import { InputGroupModule } from 'primeng/inputgroup';
 import { InputGroupAddonModule } from 'primeng/inputgroupaddon';
 import { ApisService } from '../sm.service';
 import { HttpEventType } from '@angular/common/http';
+import { HTTP_SERVICE } from '../../shared/services/service';
 @Component({
   selector: 'app-service-management-list',
   standalone: true,
@@ -51,31 +52,54 @@ export class ServiceManagementListComponent {
     'Technology',
   ];
   totalRecords: number = 0;
-  constructor(private service: ApisService) {
+  constructor(@Inject(HTTP_SERVICE) private service: any) {
     this.loadData();
   }
+  //   constructor(private httpService: MockHttpService) {
 
+
+  // loadData(fromFilter = false) {
+  //   let filterObject = this.filterApplied ? this.filterObject : {};
+  //   this.page = fromFilter ? 1 : this.page;
+  //   this.pageSize = fromFilter ? 10 : this.pageSize;
+  //   console.log('page', this.page, this.pageSize, filterObject);
+  //   this.service
+  //     .getServicesCancellation({
+  //       page: this.page,
+  //       pagination: this.pageSize,
+  //       ...filterObject,
+  //     })
+  //     .subscribe({
+  //       next: (obj) => {
+  //         if (obj.type === HttpEventType.Response) {
+  //           this.services = obj.body?.Services || [];
+  //           this.totalRecords = obj.body?.rowsCount || 0;
+  //           console.log('services', this.services);
+            
+  //         }
+  //       },
+  //       error: (error) => {
+  //         console.error('error', error);
+  //       },
+  //     });
+  // }
   loadData(fromFilter = false) {
     let filterObject = this.filterApplied ? this.filterObject : {};
     this.page = fromFilter ? 1 : this.page;
     this.pageSize = fromFilter ? 10 : this.pageSize;
     console.log('page', this.page, this.pageSize, filterObject);
     this.service
-      .getServicesCancellation({
+      .get('assets/dummy-data/services.json', {
         page: this.page,
-        pagination: this.pageSize,
+        pageSize: this.pageSize,
         ...filterObject,
       })
       .subscribe({
-        next: (obj) => {
-          if (obj.type === HttpEventType.Response) {
-            this.services = obj.body?.Services || [];
-            this.totalRecords = obj.body?.rowsCount || 0;
-            console.log('services', this.services);
-            
-          }
+        next: (obj: any) => {
+          this.services = obj.data;
+          this.totalRecords = obj.totalRecords;
         },
-        error: (error) => {
+        error: (error: any) => {
           console.error('error', error);
         },
       });

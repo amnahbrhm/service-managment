@@ -23,12 +23,13 @@
             "output": "/assets"
           }
         ],
-        "styles": ["apps/service-managment/src/styles.scss",
-        "node_modules/primeng/resources/primeng.min.css",
-        "node_modules/primeflex/primeflex.css",
-        "node_modules/primeng/resources/themes/saga-blue/theme.css",
-        "apps/service-managment/public/theme.scss"
-      ],
+        "styles": [
+          "apps/service-managment/src/styles.scss",
+          "node_modules/primeng/resources/primeng.min.css",
+          "node_modules/primeflex/primeflex.css",
+          "node_modules/primeng/resources/themes/saga-blue/theme.css",
+          "apps/service-managment/public/theme.scss"
+        ],
         "scripts": []
       },
       "configurations": {
@@ -67,6 +68,9 @@
         "development": {
           "buildTarget": "service-managment:build:development"
         }
+      },
+      "options": {
+        "host": "0.0.0.0"
       },
       "defaultConfiguration": "development"
     },
