@@ -9,7 +9,7 @@
   ],
   "include": [
     "src/**/*.d.ts"
-  ],
+, "global.d.ts"  ],
   "exclude": [
     "jest.config.ts",
     "src/**/*.test.ts",

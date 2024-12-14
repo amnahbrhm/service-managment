@@ -2,6 +2,14 @@ import { Routes } from '@angular/router';
 
 export const routes: Routes = [
     {
+        path: 'header',
+        async loadComponent() {
+            return import(
+               'microHeader/Component'
+            ).then((m) => m.AppComponent);
+        },
+    },
+    {
         path: '',
         redirectTo: 'service-management',
         pathMatch: 'full',

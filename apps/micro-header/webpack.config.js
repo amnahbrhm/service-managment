@@ -2,7 +2,7 @@ const { shareAll, withModuleFederationPlugin } = require('@angular-architects/mo
 
 module.exports = withModuleFederationPlugin({
 
-  name: 'micro-header',
+  name: 'microHeader',
 
   exposes: {
     './Component': './apps/micro-header/src/app/app.component.ts',
